@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лона в підземеллі</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Press Start 2P', cursive;
+        background-image: url(materials/mainback.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 1px;
+        padding-bottom: 50px;
+        background-color: rgba(72, 72, 72, 0.618);
+        border-radius: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h1 {
+        font-size: 3em;
+        color: #5e2bff;
+        margin-bottom: 20px;
+    }
+    .game-description {
+        font-size: 1em;
+        line-height: 1.6em;
+        margin-bottom: 30px;
+    }
+    .start-button {
+        display: inline-block;
+        background-color: #5e2bff;
+        color: #fff;
+        font-size: 2em;
+        padding: 20px 60px;
+        border: none;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .start-button:hover {
+        background-color: #3a1d6b;
+    }
+    .volume-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 60%;
+        height: 15px;
+        background: #ddd;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .volume-slider:hover {
+        opacity: 1;
+    }
+    .volume-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #5e2bff;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .volume-slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #5e2bff;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .test-button {
+        display: inline-block;
+        background-color: #5e2bff;
+        color: #fff;
+        font-size: 1em;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        font-family: 'Press Start 2P', cursive;
+    }
+    .test-button:hover {
+        background-color: #3a1d6b;
+    }
+    footer{background-color: rgba(72, 72, 72, 0.618);width: 100%;display: flex;padding: 20px;justify-content: center;}
+    footer p{margin-right: 35px;}
+    .settings{margin-top: 40px;margin-bottom: 40px;}
+    .image{width: 150px;}
+    .image1{width: 100px;}
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Лона в підземеллі</h1>
+        <div class="game-description">
+            <p>Заглибіться в таємничий світ підземелля, де живуть не тільки загадкові створіння, але й безліч загадок та небезпек. "Лона в підземеллі" - це захоплююча пригода, яка запрошує вас у захоплюючий квест разом із головною героїнею, хороброю Лоною, та її вірним супутником, улюбленцем, який іноді стає не тільки другом, але й ключем до вирішення складних завдань.</p>
+            <p>Вирушайте разом з Лоною у відповідь на виклик підземелля, де кожен крок може приховувати небезпеку чи непередбачену зустріч. Збирайте монети, щоб змусити серце Лони битися швидше, та оберігайтесь ворогів, які чатують на кожному кроці. У цій грі є три захоплюючі рівні, кожен з яких приховує свої виклики та загадки, готові випробувати вашу винахідливість та сміливість.</p>
+            <p>Протягом цієї захоплюючої подорожі ви зустрінете чудові розкішні місця підземелля, які зможуть забудований вражати своєю красою та загадковістю. Але пам'ятайте, що кожна ваша дія може вплинути на подальший розвиток подій, тож будьте обережні та уважні.</p>
+            <p>Це асинхронна гра для двох гравців. Гравці виконують свої ходи по черзі, витрачаючи кожен по п'ять дій. У цій неймовірній подорожі вони керують двома героями хороброю Лоною та в'ялим слизьком, які мають працювати в команді щоб пройти гру!</p>
+            
+            <p style="color: #ff2b2b; font-size: 26px;"><b>Керування персонажами:</b></p>
+                <img src="materials/man1.gif" alt="lona" class="image">
+                <img src="materials/pet1.gif" alt="sliz" class="image1">
+            <p>Лона: стрілочки (вгору, вниз, вліво, вправо), атака - клавіша F</p>
+            <p>Слизько: WASD</p>
+        </div>
+        <a href="Level1.html" class="start-button">Старт</a>
+    </div>
+
+    <div class="container settings">
+        <h3>Налаштування гучності</h3>
+        <b>Музика <span style="color: #5e2bff;">/</span> </b><input type="range" min="0" max="100" value="50" class="volume-slider" id="musicVolumeSlider">
+        <button class="test-button" onclick="playMusic()">Перевірка</button> <br>
+
+        <b>Звуки <span style="color: #5e2bff;">ㅤ/</span> </b><input type="range" min="0" max="100" value="50" class="volume-slider" id="soundEffectVolumeSlider">
+        <button class="test-button" onclick="playSoundEffect()">Перевірка</button>
+    </div>
+
+    <footer>
+        <p><b>Розробив:</b> Іваненко Андрій Констянтинович</p>
+        <p style="color: #5e2bff;"><b>//</b></p>
+        <p><b>Керівник:</b> Ткаченко Вікторія Миколаївна</p>
+    </footer>
+
+    <audio id="musicAudio">
+        <source src="materials/nyanpasu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="soundEffectAudio">
+        <source src="materials/am-am-am.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const musicAudio = document.getElementById("musicAudio");
+        const soundEffectAudio = document.getElementById("soundEffectAudio");
+        const musicVolumeSlider = document.getElementById("musicVolumeSlider");
+        const soundEffectVolumeSlider = document.getElementById("soundEffectVolumeSlider");
+        let initialMusicVolume = localStorage.getItem('musicVolume');
+        if (initialMusicVolume === null) {
+            initialMusicVolume = 50;
+        }
+        musicVolumeSlider.value = initialMusicVolume;
+        musicAudio.volume = initialMusicVolume / 100;
+        let initialSoundEffectVolume = localStorage.getItem('soundEffectVolume');
+        if (initialSoundEffectVolume === null) {
+            initialSoundEffectVolume = 50;
+        }
+        soundEffectVolumeSlider.value = initialSoundEffectVolume;
+        soundEffectAudio.volume = initialSoundEffectVolume / 100;
+        musicVolumeSlider.oninput = function() {
+            musicAudio.volume = this.value / 100;
+            localStorage.setItem('musicVolume', this.value);
+        };
+        soundEffectVolumeSlider.oninput = function() {
+            soundEffectAudio.volume = this.value / 100;
+            localStorage.setItem('soundEffectVolume', this.value);
+        };
+        function playMusic() {
+            musicAudio.play();
+        }
+        function playSoundEffect() {
+            soundEffectAudio.play();
+        }
+    </script>
+</body>
+</html>

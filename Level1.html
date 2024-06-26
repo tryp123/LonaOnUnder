@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Диплом</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Заголовок -->
+<div class="Baners">
+    <h1>Рівень №1</h1>
+    <a href="index.html" ><img src="materials/backsvg.png" alt="back" width="80px"id="back"></a>
+    <div class="test">
+      <div id="column-1">Поточний гравець: <span id="currentPlayer" style="color:red; font-weight: bold;">Лона</span> /</div>
+      <div id="column-2">Ходів залишилося: <span id="movesLeft" style="color: green; font-weight: bold;">5</span> /</div>
+      <div id="column-3">Зібрано монет: <span id="score" style="color: yellow; font-weight: bold;">0</span></div>
+    </div>
+</div>
+<!-- Ігрова область -->
+<div id="container">
+  <div id="game-board">
+  </div>
+  <img id="torch" src="materials/Torch.gif" style="left: 950px; top: 150px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 950px; top: 300px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 950px; top: 20px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 25px; top: 20px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 25px; top: 180px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 25px; top: 360px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 125px; top: 360px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 125px; top: 180px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 125px; top: 20px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 425px; top: 20px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 425px; top: 200px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 250px; top: 320px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 705px; top: 30px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 550px; top: 30px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 550px; top: 200px;">
+  <img id="torch" src="materials/Torch.gif" style="left: 550px; top: 400px;">
+ <!--  -->
+  <img id="button4" src="materials/but2.png" style="left: 130px; bottom: 10px;"> 
+  <img id="button3" src="materials/but1.png" style="left: 130px; bottom: 10px;">
+  <img id="button2" src="materials/but2.png" style="left: 20px; bottom: 10px;"> 
+  <img id="button1" src="materials/but1.png" style="left: 20px; bottom: 10px;">
+  <img id="button6" src="materials/but2.png" style="left: 220px; bottom: 330px;"> 
+  <img id="button5" src="materials/but1.png" style="left: 220px; bottom: 330px;">
+  <!-- players -->
+  <div id="Pet" class="pets pet1" style="top: 13px; left: 14px;"></div>
+  <div id="Man" class="player man1" style="top: 24px; left: 940px;"></div>
+  <!-- collect -->
+  <img class="collectible" src="materials/coin.gif" style="left: 960px; top: 425px;">
+  <img class="collectible" src="materials/coin.gif" style="left: 850px; top: 170px;">  
+  <img class="collectible" src="materials/coin.gif" style="left: 850px; top: 60px;">  
+  <!-- enemys -->
+  <img class="enemy" src="materials/giphy.gif" style="top: 330px; left: 700px; transform: scaleX(-1);">
+  <img class="enemy" src="materials/giphy.gif" style="top: 190px; left: 780px;">
+  <img class="enemy shershen" src="materials/shershen.gif" style="top: 50px; left: 710px;">
+  <img class="enemy" src="materials/giphy.gif" style="top: 240px; left: 380px;">
+  <img class="enemy" src="materials/giphy.gif" style="top: 445px; left: 250px; transform: scaleX(-1);">
+  <!-- level design -->
+  <div id="Stena"></div>
+  <div id="Stena2"></div>
+  <div id="Stena-1"></div>
+  <div id="Stena-2"></div>
+  <div id="Stena-3"></div>
+  <div id="Stena-4"></div>
+  <div id="Stena-5"></div>
+  <div id="Stena-6"></div>
+  <div id="Stena-7"></div>
+  <div id="Stena-8"></div>
+  <div id="Stena-9"></div>
+  <div id="Stena-10"></div>
+  <div id="Stena-11"></div>
+  <div id="Stena-12"></div>
+  <!-- door -->
+  <div id="Stena3"></div> 
+  <div id="Stena4"></div> 
+  <div id="Stena5"></div> 
+</div>
+<!-- Звуки -->
+<audio id="myAudio">
+  <source src="materials/voltaire-196018.mp3" type="audio/mpeg">
+</audio>
+<audio id="LevelCompl">
+  <source src="materials/winnner.mp3" type="audio/mpeg">
+</audio>
+<audio id="SoundDeath">
+  <source src="materials/shejmm.mp3" type="audio/mpeg">
+</audio>
+<audio id="SoundKnopka">
+  <source src="materials/zvonkiy-zvuk-najatiya-knopki1.mp3" type="audio/mpeg">
+</audio>
+<audio id="SoundCollect">
+  <source src="materials/brosok-odnoy-monetki-v-obschuyu-kuchu.mp3" type="audio/mpeg">
+</audio>
+<audio id="ButtonClick">
+  <source src="materials/ButtonSIun1.mp3" type="audio/mpeg">
+</audio>
+<audio id="DeathEnemy">
+  <source src="materials/deathEnemy.mp3" type="audio/mpeg">
+</audio>
+<audio id="Udar">
+  <source src="materials/udar.mp3" type="audio/mpeg">
+</audio>
+<!-- Діалогові вікна -->
+<div id="restartMessage">
+  <h3>Халепа! Ви програли!</h3>
+  <button onclick="playButtonClick(), restartLevel()">Почати спочатку</button>
+  <button onclick="playButtonClick(), cancelRestart()">Вийти</button>
+</div>
+<div id="level-passed-dialog" class="dialog" style="display: none;">
+  <h3 style="color:rgb(0, 164, 63)">Рівень пройдено!</h3>
+  <h4>Зібрані монети:</h4>
+  <div id="stars">
+    <h1 id="No-Monet">Ви не зібрали монет :(</h1>
+  </div>
+  <button id="next-level-button" onclick="playButtonClick()">Наступний рівень</button>
+  <button id="exit-button" onclick="playButtonClick()">Вийти</button>
+</div>
+
+<script src="Move.js"></script>
+<script src="Collect.js"></script>
+<script src="Door.js"></script>
+<script src="Door2.js"></script>
+<script src="Door3.js"></script>
+<script src="SoundControl.js"></script>
+<script>
+  document.getElementById("next-level-button").addEventListener("click", function() {
+  window.location.href = "Level2.html";
+});
+</script>
+</body>
+</html>

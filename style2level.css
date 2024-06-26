@@ -1,0 +1,119 @@
+#Stena{
+    height: 20px;
+    width: 200px;
+    left: 15px;
+    top:60px;
+  }
+  #Stena2 {
+    height: 400px;
+    left: 280px;
+    top: 15px;
+  }
+  #Stena-1 {
+    height: 225px;
+    left: 915px;
+    top: 15px;
+  }
+  #Stena-2 {
+    height: 20px;
+    width: 200px;
+    left: 15px;
+    top: 140px;
+  }
+  #Stena-3 {
+    height: 20px;
+    width: 200px;
+    left: 815px;
+    top: 370px;
+  }
+  #Stena-4 {
+    height: 215px;
+    width: 20px;
+    left: 700px;
+    top: 270px;
+  }
+  #Stena-5 {
+    height: 20px;
+    width: 200px;
+    left: 15px;
+    top: 220px;
+  }
+  #Stena-6 {
+    height: 20px;
+    width: 200px;
+    left: 80px;
+    top: 300px;
+  }
+  #Stena-7 {
+    height: 20px;
+    width: 200px;
+    left: 80px;
+    top: 394px;
+  }
+  #Stena-8 {
+    height: 135px;
+    width: 20px;
+    left: 795px;
+    top: 15px;
+  }
+  #Stena-9 {
+    height: 20px;
+    width: 400px;
+    left: 395px;
+    top: 130px;
+  }
+  #Stena-10 {
+    height: 20px;
+    width: 310px;
+    left: 410px;
+    top: 260px;
+  }
+  #Stena-11 {
+    height: 140px;
+    width: 20px;
+    left: 580px;
+    top: 345px;
+  }
+  #Stena-12 {
+    height: 100px;
+    left: 410px;
+    bottom: 120px;
+  }
+  /* двері */
+  #Stena4{
+    background-image: url(materials/wood.jpg);
+    height: 95px;
+    width: 20px;
+    left: 900px;
+    top: 390px;
+  }
+  #Stena3{
+    background-image: url(materials/wood.jpg);
+    height: 20px;
+    width: 100px;
+    left: 815px;
+    top: 130px;
+  }
+  #Stena5{
+    background-image: url(materials/wood.jpg);
+    height: 20px;
+    left: 300px;
+    width: 110px;
+    bottom: 220px;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  .shershen {
+    animation: moveLeftRight 6s infinite;
+  }

@@ -1,0 +1,111 @@
+#Stena{
+    height: 20px;
+    width: 100px;
+    left: 400px;
+    top:100px;
+  }
+  #Stena2 {
+    height: 200px;
+    left: 400px;
+    top: 120px;
+  }
+  #Stena-1 {
+    height: 20px;
+    width: 100px;
+    left: 600px;
+    top: 100px;
+  }
+  #Stena-2 {
+    height: 200px;
+    width: 20px;
+    left: 680px;
+    top: 120px;
+  }
+  #Stena-3 {
+    height: 20px;
+    width: 100px;
+    left: 400px;
+    top: 320px;
+  }
+  #Stena-4 {
+    height: 20px;
+    width: 100px;
+    left: 600px;
+    top: 320px;
+  }
+  #Stena-5 {
+    height: 145px;
+    width: 20px;
+    left: 600px;
+    top: 340px;
+  }
+  #Stena-6 {
+    height: 85px;
+    width: 20px;
+    left: 480px;
+    top: 15px;
+  }
+  #Stena-7 {
+    height: 350px;
+    width: 20px;
+    left: 130px;
+    top: 15px;
+  }
+  #Stena-8 {
+    height: 350px;
+    width: 20px;
+    left: 260px;
+    top: 135px;
+  }
+  #Stena-9 {
+    height: 400px;
+    width: 20px;
+    left: 920px;
+    top: 85px;
+  }
+  #Stena-10 {
+    height: 400px;
+    width: 20px;
+    left: 800px;
+    top: 15px;
+  }
+  /* двері */
+  #Stena4{
+    background-image: url(materials/wood.jpg);
+    height: 120px;
+    width: 20px;
+    left: 130px;
+    top: 365px;
+  }
+  #Stena3{
+    background-image: url(materials/wood.jpg);
+    height: 20px;
+    width: 120px;
+    left: 280px;
+    top: 135px;
+  }
+  #Stena5{
+    background-image: url(materials/wood.jpg);
+    height: 20px;
+    left: 500px;
+    width: 100px;
+    bottom: 160px;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  .shershen {
+    animation: moveLeftRight 6s infinite;
+  }
+#level-passed-dialog h6{margin: 10px 5px;}
+#exit-button{width: 90%;font-family: 'Press Start 2P', sans-serif; font-size: 10px;height: 30px;}

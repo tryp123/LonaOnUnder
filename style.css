@@ -1,0 +1,219 @@
+body{background-image: url(materials/bg.jpg);background-size: 100%;overflow: hidden;font-family: 'Press Start 2P', sans-serif;
+}
+.press-start-2p-regular {
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#container {
+  width: 1030px; 
+  height: 500px;
+  background-image: url(materials/Stone.jpg);
+  position: relative;
+  margin: 0 auto;
+}
+.Baners {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  padding-top: 10px;
+}
+#back{position: absolute;right: 50px;top: 40px;}
+#back:hover{transition:ease-out 0.3s;transform: scale(1.2);}
+.test{
+margin-left: 50px;
+font-size: 16px;
+text-align: center;
+justify-content: center;
+color: antiquewhite;
+}
+#column-1,#column-2,#column-3{margin: 10px;}
+#game-board {
+  width: 1000px;
+  height: 470px;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  background-image: url(materials/Stone.jpg);  
+  background-repeat: repeat;
+  background-size: 30%;
+  background-color: black;
+  filter: brightness(0.5); 
+}
+[id^="Stena"]{
+  background-image: url(materials/Stone.jpg);
+  width: 20px; 
+  position:absolute;
+}
+#Stena{
+  height: 260px;
+  left: 100px;
+  top:15px;
+}
+#Stena2 {
+  height: 150px;
+  left: 100px;
+  top: 333px;
+}
+#Stena-1 {
+  height: 400px;
+  left: 200px;
+  top: 85px;
+}
+#Stena-2 {
+  height: 20px;
+  width: 200px;
+  left: 200px;
+  top: 85px;
+}
+#Stena-3 {
+  height: 215px;
+  left: 920px;
+  top: 15px;
+}
+#Stena-4 {
+  height: 20px;
+  left: 915px;
+  width: 100px;
+  top: 370px;
+}
+#Stena-5 {
+  height: 20px;
+  width: 200px;
+  left: 740px;
+  top: 230px;
+}
+#Stena-6 {
+  height: 20px;
+  width: 180px;
+  left: 630px;
+  top: 370px;
+}
+#Stena-7 {
+  height: 235px;
+  left: 630px;
+  top: 150px;
+}
+#Stena-8 {
+  height: 20px;
+  width: 290px;
+  left: 630px;
+  top: 120px;
+}
+#Stena-9 {
+  height: 375px;
+  left: 510px;
+  top: 15px;
+}
+#Stena-10 {
+  height: 20px;
+  width: 210px;
+  left: 220px;
+  top: 160px;
+}
+#Stena-11 {
+  height: 20px;
+  width: 160px;
+  left: 350px;
+  top: 280px;
+}
+#Stena-12 {
+  height: 70px;
+  left: 350px;
+  bottom: 15px;
+}
+#Stena3{
+  background-image: url(materials/wood.jpg);
+  height: 80px;
+  left: 100px;
+  top: 260px;
+}
+#Stena4{
+  background-image: url(materials/wood.jpg);
+  height: 95px;
+  left: 915px;
+  top: 390px;
+}
+#Stena5{
+  background-image: url(materials/wood.jpg);
+  height: 115px;
+  left: 350px;
+  bottom: 85px;
+}
+  .player {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  }
+  .pets, [class^="collectible"]{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  }
+  .man1Attack,.man2Attack,.man3Attack,.man4Attack{    width: 120px;
+    height: 120px;}
+  .pet1 { background-image: url('materials/pet1.gif');}
+  .pet2 { background-image: url('materials/pet2.gif');}
+  .pet3 { background-image: url('materials/pet3.gif');}
+  .pet4 { background-image: url('materials/pet4.gif');}
+  .man1 { background-image: url('materials/man1.gif');}
+  .man2 { background-image: url('materials/man2.gif');}
+  .man3 { background-image: url('materials/man3.gif');}
+  .man4 { background-image: url('materials/man4.gif');}
+  .man1Attack { background-image: url('materials/man1Attack.gif');}
+  .man2Attack { background-image: url('materials/Man2Attack.gif');}
+  .man3Attack { background-image: url('materials/Man3Attack.gif');}
+  .man4Attack { background-image: url('materials/Man4Attack.gif');}
+.pet1,.pet2,.pet3,.pet4,.man1,.man2,.man3,.man4,.man1Attack,.man2Attack,.man3Attack,.man4Attack{background-size: cover;}
+#restartMessage {
+  display: none;
+  z-index: 9999;}
+  .dialog, #restartMessage{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+.dialog button, #restartMessage button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;
+}
+.dialog button:hover, #restartMessage button:hover {
+  background-color: #0056b3;
+}
+#stars img {
+  width: 30px;
+  margin: 5px 10px;
+}
+@keyframes moveLeftRight {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-50px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+.shershen {
+  animation: moveLeftRight 4s infinite;
+}
+#No-Monet{font-size: 14px;display: inline; color: red;}
+#torch{position: absolute;width: 60px;filter: brightness(1.3);}
+[id^="button"]{position: absolute;width: 60px;}
+[class^="enemy"]{position: absolute;width: 50px;}
+#exit-button,#next-level-button{font-family: 'Press Start 2P', sans-serif; font-size: 10px; height: 30px;}
